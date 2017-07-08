@@ -37,3 +37,4 @@ Comenzamos...
 ### Versión 0.1.0
 * Añadimos Twig como dependencia.
 * Añadimos el componente Product
+* Ficha de producto. 

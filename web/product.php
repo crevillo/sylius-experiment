@@ -8,8 +8,6 @@ use Acme\Catalog;
 $catalog = Catalog::init();
 
 echo $twig->render(
-    'index.html.twig',
-    ['products' => $catalog->getProducts()]
+    'product.html.twig',
+    ['product' => $catalog->getProductByCode($_GET['c'])]
 );
-
-

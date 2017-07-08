@@ -18,6 +18,7 @@ class Product extends SyliusProduct implements TranslatableInterface
         parent::__construct();
 
         $this->setCurrentLocale(self::LOCALE);
+        $this->setFallbackLocale(self::LOCALE);
         $this->setCode($sku);
 
         $translation = new ProductTranslation();

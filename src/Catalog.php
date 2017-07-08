@@ -26,7 +26,7 @@ class Catalog
             '0001',
             'Nuestro producto 1',
             'Un producto bien chulo',
-            'product1.php'
+            'product.php'
 
         );
 
@@ -34,10 +34,27 @@ class Catalog
             '0002',
             'Nuestro producto 2',
             'Otro producto bien chulo',
-            'product2.php'
+            'product.php'
 
         );
 
-        return new self([$p1, $p2]);
+        $p3 = new Product(
+            '0003',
+            'Nuestro producto 3',
+            'El tercer producto bien chulo',
+            'product.php'
+
+        );
+
+        return new self([$p1, $p2, $p3]);
+    }
+
+    /**
+     * @param $code
+     * @return Product
+     */
+    public function getProductByCode(string $code): Product
+    {
+        return $this->products[$code];
     }
 }
