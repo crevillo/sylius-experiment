@@ -10,8 +10,9 @@
             </div>
         </div>
         <div class="col-sm-4">
+            <div class="panel-body">Costo: <strong>{{ product.price }}</strong></div>
             <form method="post">
-                <input type="hidden" value="{{ product.code }}">
+                <input type="hidden" name="code" value="{{ product.code }}">
                 <div class="container button-wrapper">
                     <button class="btn btn-lg" data-toggle="tooltip" data-placement="bottom">Añadir al carrito <span class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>

@@ -38,3 +38,8 @@ Comenzamos...
 * Añadimos Twig como dependencia.
 * Añadimos el componente Product
 * Ficha de producto. 
+
+### Versión 0.1.0
+* Añadimos el componente order
+* permitir añadir a cesta desde ficha de producto
+* Preparamos página de carrito con posibilidad de modificar cantidades y borrar items
