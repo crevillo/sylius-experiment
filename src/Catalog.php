@@ -26,6 +26,7 @@ class Catalog
             '0001',
             'Nuestro producto 1',
             'Un producto bien chulo',
+            100,
             'product.php'
 
         );
@@ -34,6 +35,7 @@ class Catalog
             '0002',
             'Nuestro producto 2',
             'Otro producto bien chulo',
+            200,
             'product.php'
 
         );
@@ -42,6 +44,7 @@ class Catalog
             '0003',
             'Nuestro producto 3',
             'El tercer producto bien chulo',
+            300,
             'product.php'
 
         );

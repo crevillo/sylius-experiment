@@ -13,13 +13,16 @@ class Product extends SyliusProduct implements TranslatableInterface
 
     const LOCALE = 'es_ES';
 
-    public function __construct($sku, $name, $description, $slug ='')
+    private $price;
+
+    public function __construct($sku, $name, $description, $price, $slug ='')
     {
         parent::__construct();
 
         $this->setCurrentLocale(self::LOCALE);
         $this->setFallbackLocale(self::LOCALE);
         $this->setCode($sku);
+        $this->setPrice($price);
 
         $translation = new ProductTranslation();
         $translation->setLocale(self::LOCALE);
@@ -28,5 +31,15 @@ class Product extends SyliusProduct implements TranslatableInterface
         $translation->setDescription($description);
 
         $this->addTranslation($translation);
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
     }
 }
